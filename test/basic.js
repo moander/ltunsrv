@@ -2,10 +2,19 @@ var http = require('http');
 var url = require('url');
 var assert = require('assert');
 var localtunnel = require('ltun');
+var exec = require('child_process').exec;
+var path = require('path');
 
 var localtunnel_server = require('../server')();
 
 var lt_server_port
+
+test('ltunsrv bin file', function(done) {
+   exec('node bin/ltunsrv --version', {cwd: path.resolve(__dirname, '../')}, function(error, stdout, stderr) {
+       assert.ifError(error);
+       done();
+   });
+});
 
 test('setup localtunnel server', function(done) {
     var server = localtunnel_server.listen(function() {

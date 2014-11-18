@@ -1,11 +1,11 @@
 {
   "author": "Morten Andersen <m@asl.wtf>",
   "name": "ltunsrv",
-  "description": "expose lback.org to the world",
-  "version": "0.0.4",
+  "description": "ltun.net backend",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/moander/ltunsrv.git#ltunsrv"
+    "url": "git://github.com/moander/ltunsrv.git"
   },
   "dependencies": {
     "book": "1.3.1",
@@ -34,6 +34,9 @@
   },
   "scripts": {
     "test": "mocha --ui qunit --reporter list -- test",
-    "start": "./bin/ltunsrv"
+    "start": "node bin/ltunsrv"
+  },
+  "bin": {
+    "ltunsrv": "./bin/ltunsrv"
   }
 }

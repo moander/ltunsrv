@@ -9,7 +9,7 @@ var makeup = require('makeup');
 var browserkthx = require('browserkthx');
 var tldjs = require('tldjs');
 var on_finished = require('finished');
-var debug = require('debug')('ltunsrv');
+var debug = require('debug')('ltunsrv:server');
 
 var Proxy = require('./proxy');
 var rand_id = require('./lib/rand_id');
@@ -106,7 +106,8 @@ function new_client(id, opt, cb) {
 
     // can't ask for id already is use
     // TODO check this new id again
-    if (clients[id]) {
+    while (clients[id]) {
+        debug('id allready in use: ' + id);
         id = rand_id();
     }
 
