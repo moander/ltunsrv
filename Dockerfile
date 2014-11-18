@@ -8,4 +8,4 @@ RUN npm install
 ADD . /usr/src/app
 
 ENV NODE_ENV production
-ENTRYPOINT ["bin/server"]
+ENTRYPOINT ["bin/ltunsrv"]

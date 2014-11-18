@@ -9,7 +9,7 @@ var makeup = require('makeup');
 var browserkthx = require('browserkthx');
 var tldjs = require('tldjs');
 var on_finished = require('finished');
-var debug = require('debug')('localtunnel-server');
+var debug = require('debug')('ltunsrv');
 
 var Proxy = require('./proxy');
 var rand_id = require('./lib/rand_id');
@@ -43,7 +43,7 @@ function maybe_bounce(req, res, bounce) {
     // we use 502 error to the client to signify we can't service the request
     if (!client) {
         res.statusCode = 502;
-        res.end('localtunnel error: no active client for \'' + client_id + '\'');
+        res.end('ltun error: no active client for \'' + client_id + '\'');
         req.connection.destroy();
         return true;
     }

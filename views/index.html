@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="localtunnel : expose yourself to the world" />
+    <meta name="description" content="ltun.net : expose yourself to the world" />
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/grid.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/widgets.css">
 
-    <title>localtunnel</title>
+    <title>ltun.net</title>
   </head>
 
   <body>
@@ -27,43 +27,43 @@
           <h3><a href="https://www.mashape.com/" target="_blank">mashape</a> <small><a href="https://twitter.com/mashape" target="_blank"><i class="fa fa-twitter"></i></a></small></h3>
         </div>
 
-        <h1>localtunnel</h1>
+        <h1>ltun.net</h1>
         <h2>expose yourself to the world</h2>
 
       </div>
 
-      <a href="https://github.com/defunctzombie/localtunnel"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+      <a href="https://github.com/moander/ltun"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
     </div>
 
     <div class="container">
 
       <p>
-      Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.
+      ltun.net allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.
       </p>
 
       <p>
-      Localtunnel will assign you a unique publicly accessible url that will proxy all requests to your locally running webserver.
+      ltun.net will assign you a unique publicly accessible url that will proxy all requests to your locally running webserver.
       </p>
 
       <h2>quickstart</h2>
 
       <p>
-      Localtunnel command line script allows you to manually setup a sharing tunnel to a local webserver.
+      ltun command line script allows you to manually setup a sharing tunnel to a local webserver.
       </p>
 
-      <div class="highlight"><pre>npm install -g localtunnel</pre></div>
+      <div class="highlight"><pre>npm install -g ltun</pre></div>
 
       <p>Start a webserver on some local port (in our example we have a server running on port 8000).</p>
 
-      <p>Make sure everything is working locally first by visiting http://localhost:8000.</p>
+      <p>Make sure everything is working locally first by visiting http://lback.org:8000.</p>
 
       <p>Now use the command line app to request a tunnel to your local server.</p>
 
-      <div class="highlight"><pre><span class="nv">$ </span>lt --port 8000
-your url is: https://gqgh.localtunnel.me</pre></div>
+      <div class="highlight"><pre><span class="nv">$ </span>ltun --port 8000
+your url is: https://gqgh.ltun.net</pre></div>
 
-      <p>You can now share <em>https://gqgh.localtunnel.me</em> with anyone. As long as your local instance of <strong>lt</strong> is running, this url will remain active. Any requests to that url will be routed to your service on port 8000.</p>
+      <p>You can now share <em>https://gqgh.ltun.net</em> with anyone. As long as your local instance of <strong>ltun</strong> is running, this url will remain active. Any requests to that url will be routed to your service on port 8000.</p>
 
       <h2>other cool stuff</h2>
       <h3><i class="fa fa-lock"></i> Secure https for all tunnels</h3>
@@ -73,14 +73,15 @@ your url is: https://gqgh.localtunnel.me</pre></div>
 
       <h2>developers</h2>
       <p>
-      See the <a href="https://github.com/defunctzombie/localtunnel">github page</a> or <a href="https://github.com/defunctzombie/localtunnel/wiki">wiki</a> for info on clients in other languages and API for the tunnel proxy.
+        The ltun.net project is just a fork.. All credits goes to <a href="https://twitter.com/defunctzombie">@defunctzombie</a> and the <a href="https://github.com/defunctzombie/localtunnel">original project</a>
       </p>
 
     </div>
 
     <div class="footer">
       <div class="container">
-        <p>localtunnel is maintained by <a href="https://twitter.com/defunctzombie">@defunctzombie</a></p>
+        <p>ltun.net is maintained by <a href="https://github.com/moander">Morten Andersen</a></p>
+        <p>localtunnel.me is maintained by <a href="https://twitter.com/defunctzombie">@defunctzombie</a></p>
       </div>
     </div>
 

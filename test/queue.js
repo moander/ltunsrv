@@ -1,7 +1,7 @@
 var http = require('http');
 var url = require('url');
 var assert = require('assert');
-var localtunnel = require('localtunnel');
+var localtunnel = require('ltun');
 
 var localtunnel_server = require('../server')({
     max_tcp_sockets: 1

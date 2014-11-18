@@ -1,11 +1,11 @@
 {
-  "author": "Roman Shtylman <shtylman@gmail.com>",
-  "name": "localtunnel-server",
-  "description": "expose localhost to the world",
+  "author": "Morten Andersen <m@asl.wtf>",
+  "name": "ltunsrv",
+  "description": "expose lback.org to the world",
   "version": "0.0.4",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shtylman/localtunnel-server.git"
+    "url": "git://github.com/moander/ltunsrv.git#ltunsrv"
   },
   "dependencies": {
     "book": "1.3.1",
@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "mocha": "1.18.2",
-    "localtunnel": "1.1.2"
+    "ltun": "1.5.1"
   },
   "scripts": {
     "test": "mocha --ui qunit --reporter list -- test",
-    "start": "./bin/server"
+    "start": "./bin/ltunsrv"
   }
 }

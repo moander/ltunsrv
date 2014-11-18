@@ -2,7 +2,7 @@ var net = require('net');
 var EventEmitter = require('events').EventEmitter;
 
 var log = require('bookrc');
-var debug = require('debug')('localtunnel-server');
+var debug = require('debug')('ltunsrv');
 
 var Proxy = function(opt, cb) {
     if (!(this instanceof Proxy)) {
